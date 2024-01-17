@@ -1,5 +1,5 @@
 
-console.log {'Sucesso'}
+console.log ('Sucesso')
 
 
 
