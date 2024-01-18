@@ -5,13 +5,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #cccacab7;
+}
+
 .content {
     padding: 1rem;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vh;
 }
 
 .content h1 {
     padding: 0;
 }
+@media screen and (min-width: 992px) {
+.content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}}
 
 ol.pokemons {
     display: grid;
@@ -20,6 +34,18 @@ ol.pokemons {
     padding: 0;
     margin: 0;
 }
+@media screen and (min-width: 380px) {
+    ol.pokemons {
+        grid-template-columns: 1fr 1fr;
+    }}
+@media screen and (min-width: 576px) {
+    ol.pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
+@media screen and (min-width: 992px) {
+    ol.pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }}
 
  ol.pokemons .Bulbasaur {
     margin: .5rem;
