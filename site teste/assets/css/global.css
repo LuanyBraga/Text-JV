@@ -2,7 +2,101 @@
 
 * {
     font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
 }
 
+.content {
+    padding: 1rem;
+}
 
+.content h1 {
+    padding: 0;
+}
+
+ol.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ ol.pokemons .Bulbasaur {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14a06fd6;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+ .Bulbasaur .number {
+    color: #49d0b0;
+    text-align: right;
+    opacity: 0.4;
+    font-size: .625rem;
+ }
+
+ol.pokemons .Ivysaur {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14a06fd6;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+ .Ivysaur .number {
+    color: #49d0b0;
+    text-align: right;
+    opacity: 0.4;
+    font-size: .625rem;
+ }
+
+ol.pokemons .Venesaur {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14a06fd6;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+ .Venesaur .number {
+    color: #49d0b0;
+    text-align: right;
+    opacity: 0.4;
+    font-size: .625rem;
+ }
+
+.pokemons .detail img {
+    max-width: 100%;
+    height: 88px;
+    align-self: flex-end;
+}
+
+.pokemons .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemons .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemons .detail .types .type {
+    background-color: #61e1ca;
+    color: #fff;
+    padding: .25rem .5rem ;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    opacity: .9;
+}
+
+.pokemons .name {
+    color: #fff;
+    margin: .25rem 0;
+}
 
